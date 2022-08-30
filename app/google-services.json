@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "57540000972",
+    "firebase_url": "https://grading-system-408f5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "grading-system-408f5",
+    "storage_bucket": "grading-system-408f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57540000972:android:a7dac7653dc51c04325669",
+        "android_client_info": {
+          "package_name": "com.tajos.graedeviewer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57540000972-stukhbqi5etced6c7rfrdaaatddvsie5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRi6MTbBTZvaQDcW4LPg-2BQ7hv1pzs8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57540000972-fd9gbs6tt7kpqkb4ekmd32mm9odo4qej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

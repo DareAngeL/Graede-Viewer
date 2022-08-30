@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tajos.graedeviewer.WorkspaceFillupActivity">
+
+    <TextView
+        android:id="@+id/almostThereTxView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Almost There!"
+        android:textColor="@color/darkblue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/wrkspceCodeEdittxt"
+        android:layout_width="275dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="password"
+        android:background="@drawable/edittext_border"
+        android:backgroundTint="@color/darkblue"
+        android:ems="10"
+        android:fontFamily="@font/fira_sans"
+        android:hint="Type the code"
+        android:inputType="textShortMessage|textLongMessage|textPassword"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:textColor="@color/darkblue"
+        android:textColorHint="@color/hint_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="299dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fira_sans"
+            android:gravity="center"
+            android:text="@string/workspace_terms"
+            android:textColor="@color/darkblue"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/proceedBtn"
+            android:layout_width="94dp"
+            android:layout_height="42dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Proceed"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/fira_sans"
+        android:text="@string/workspace_lbl"
+        android:textColor="@color/darkblue"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/wrkspceCodeEdittxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="319dp"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="3dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/squiggly"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loadingSreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33789CF8"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/columns_fragment_bg"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Connecting..."
+            android:textColor="@color/darkblue"
+            android:textSize="12sp"
+            android:translationY="-25dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
